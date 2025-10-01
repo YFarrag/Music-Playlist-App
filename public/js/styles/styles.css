@@ -1,0 +1,60 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  header {
+    background-color: #343a40;
+    color: white;
+    padding: 15px;
+  }
+  
+  nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  h1, h2, h3 {
+    color: #343a40;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  .songResult {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  img {
+    display: block;
+    margin-top: 10px;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .nav-links span {
+    font-weight: bold;
+  }
+  
+  

@@ -1,0 +1,15 @@
+{
+  "name": "playlist-app-2.0",
+  "version": "1.0.0",
+  "description": "COMP 2406 Assignment 5 Full Stack Playlist App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "pug": "^3.0.2",
+    "sqlite3": "^5.1.6"
+  }
+}

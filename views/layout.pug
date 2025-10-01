@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Playlist App
+    link(rel="stylesheet", href="/styles/styles.css")
+  body
+    header
+      h1 Playlist App
+
+      nav
+        .nav-links
+          if user
+            span Welcome #{user.username} (#{user.role})
+            a(href="/playlist") Playlist 
+            a(href="/logout") Logout 
+            if user.role == 'admin'
+              a(href="/admin") Admin 
+          else
+            a(href="/login") Login 
+            a(href="/register") Register 
+
+    main
+      block content

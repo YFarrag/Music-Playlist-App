@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h2 Your Playlist
+  if songs.length
+    each song in songs
+        div(data-id=song.id class='playlist-item')
+            p #{song.title} by #{song.artist}
+            if song.artwork
+                img(src=song.artwork, width="100")
+            button(data-id=song.id class='delete-btn') Remove
+            hr
+
+  else
+    p No songs in your playlist yet.
+
+  hr
+  h3 Search iTunes
+  form#searchForm
+    input(type="text", id="searchTerm", placeholder="Enter song title", required)
+    button(type="submit") Search
+
+  div#results
+    // Search results will show here
+
+  script(src="/js/script.js")
+ 
+

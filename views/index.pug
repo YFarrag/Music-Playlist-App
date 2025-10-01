@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h2 Welcome to the Playlist App
+
+  if user
+    p Go to your #[a(href="/playlist") playlist].
+  else
+    p Please #[a(href="/login") login] or #[a(href="/register") register].

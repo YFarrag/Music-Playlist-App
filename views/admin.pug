@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h2 Admin Dashboard
+  table(border="1")
+    thead
+      tr
+        th Username
+        th Role
+    tbody
+      each user in users
+        tr
+          td #{user.username}
+          td #{user.role}
